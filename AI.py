@@ -32,13 +32,16 @@ def ai(self):
 
     # Открытие и запись в фаил масива путей str (из main --> GetFileNames)
     # Opening and writing an array of str paths to a file from(main --> GetFileNames)
-    filenames_1 = open('G:/SortPhoto1.1/code/data/getFileNames.txt', 'r')         # ВАЖНО  для работы прграммы укажите свой путь до текстового файла
-    filenames = filenames_1.read()                                                # IMPORTANT for the program to work, specify your path to the text file
+    
+    filenames_1 = open('YOUR_PATH', 'r')     # ВАЖНО  для работы прграммы укажите свой путь до текстового файла
+    filenames = filenames_1.read()           # IMPORTANT for the program to work, specify your path to the text file
+
     filenames_final=(filenames.replace("'",'').replace(' ', '').split(','))
     # Открытие и запись в фаил масива путей str (из main --> GetDirectory)
     # Opening and writing an array of str paths to a file from(main --> GetFileNames)
-    Your_Directory_1 = open('G:/SortPhoto1.1/code/data/getDirectory.txt', 'r')    # ВАЖНО  для работы прграммы укажите свой путь до текстового файла
-    Your_Directory = Your_Directory_1.read()                                      # IMPORTANT for the program to work, specify your path to the text file
+
+    Your_Directory_1 = open('YOUR_PATH', 'r')       # ВАЖНО  для работы прграммы укажите свой путь до текстового файла
+    Your_Directory = Your_Directory_1.read()         # IMPORTANT for the program to work, specify your path to the text file
 
     # Код ai
     # ai code

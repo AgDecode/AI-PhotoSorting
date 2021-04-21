@@ -20,15 +20,19 @@ class CurrencyConv(QtWidgets.QMainWindow):
 
     from AI import ai
     # Функция вызова диалоговова окна с выбором папки
+
     def GetDirectory(self):
         dirlist = QFileDialog.getExistingDirectory(self,"Выбрать папку",".")
-        with open("G:/SortPhoto1.1/code/data/getDirectory.txt", "w") as file:
-            file.write(dirlist)
+        with open("YOUR_PATH", "w") as file:    # ВАЖНО  для работы прграммы укажите свой путь до текстового файла
+            file.write(dirlist)                 # IMPORTANT for the program to work, specify your path to the text file
+
     #Функция вызова диалоговова окна с выбором директории
+
     def GetFileNames(self):
         filenames, ok = QFileDialog.getOpenFileNames(self,"Выберите несколько файлов", ".","All Files(*.*)")
-        with open("G:/SortPhoto1.1/code/data/getFileNames.txt", "w") as file:
-            file.write(str(filenames)[1:-1])
+        with open("YOUR_PATH", "w") as file:    # ВАЖНО  для работы прграммы укажите свой путь до текстового файла
+            file.write(str(filenames)[1:-1])    # IMPORTANT for the program to work, specify your path to the text file
+
     def Help(self):
         webbrowser.open('https://enter_your_site', new=2)
 
